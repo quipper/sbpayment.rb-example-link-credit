@@ -1,24 +1,20 @@
-# README
+sbpayment.rb example rails application (link type payment)
+==========================================================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Please check following files:
 
-Things you may want to cover:
+- config/initializers/sbpayment.rb
+  - Configuration example of sbpayment.rb
+- config/routes.rb
+- app/controllers/orders_controller.rb
+- .env
 
-* Ruby version
+How to run app
+--------------
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Install `ngrok` https://ngrok.com/
+2. Launch `ngrok`
+3. Replace URLs of `.env` by given `ngrok` URL
+4. `bundle exec rails server`
+5. Visit http://localhost:3000
