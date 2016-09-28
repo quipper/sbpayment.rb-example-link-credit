@@ -14,8 +14,9 @@ How to run app
 
 
 1. Install `ngrok` https://ngrok.com/
-1. Launch `ngrok`
+1. Launch `ngrok` as `ngrok http 3000`
 1. Replace URLs of `.env` by given `ngrok` URL
 1. `bundle exec rake db:create db:migrate`
+1. `bundle exec rake db:seed`
 1. `bundle exec rails server`
 1. Visit http://localhost:3000
